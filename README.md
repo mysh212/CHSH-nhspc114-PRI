@@ -10,7 +10,7 @@
  - [題本](https://github.com/mysh212/CHSH-nhspc114-PRI/tree/master/Problems)
  - [測資 Testcase](https://github.com/mysh212/CHSH-nhspc114-PRI/tree/master/Testcases)
  - [記分板直播](https://youtube.com/live/I0t2F3vBl_w)
- - [文件](https://github.com/mysh212/CHSH-nhspc114-PRI/tree/master/Docs)
-   - [如何補題](https://mysh212.github.io/CHSH-nhspc114-PRI/Docs/)
+ <!-- - [文件](https://github.com/mysh212/CHSH-nhspc114-PRI/tree/master/Docs)
+   - [如何補題](https://mysh212.github.io/CHSH-nhspc114-PRI/Docs/) -->
    
 ***HARC X CHSH***
