@@ -2,6 +2,51 @@
 
 ## **A. 方差緊密度** ***<font color = '#AAAAAA'>Variance Tightness</font>***
 
+### ***subtask1***
+
+枚舉切點的位置，預處理一下前綴 / 後綴和即可
+時間複雜度為 $O(N)$
+
+### ***subtask2***
+
+因為 $N \leq 20$，我們可以爆搜 $N-1$ 個切點是否要切，然後花線性的時間判斷是否合法和取最大值
+時間複雜度為 $O(2^N N)$
+
+### ***subtask3***
+
+定義 $dp[i][k]$ 為 $A$ 的前綴 $A[1..i]$ 切分成 $K$ 段的「方差緊密度和」最大值
+轉移式：$dp[i][k] = \max_{1 \leq j \lt i} \; \{dp[j][k - 1] + R(j + 1, i)\}$
+時間複雜度為 $O(N^3)$
+
+### ***subtask4***
+定義 $C(i, j) = -R(i, j)$，發現到 $C$ 滿足 $\text{Monge Condition}$：
+
+$$
+C(i, j) + C(i + 1, j + 1) \leq C(i + 1, j) + C(i, j + 1)
+$$
+
+證明如下：
+
+有一恆等式：
+$$
+N \sum\limits_{i=1}^{N}x_i^2 - (\sum\limits_{i=1}^{N} x_i)^2 = \sum\limits_{1 \leq p \lt q \leq N}(x_p - x_q)^2
+$$
+因此我們可以得到：
+$$C(i, j) = \sum\limits_{i \leq p \lt q \leq j} (A_p - A_q)^2$$
+考慮差值：
+$$
+\begin{aligned}
+\Delta =& (C(i + 1, j) + C(i, j + 1)) - (C(i, j) + C(i + 1, j + 1)) \\ 
+=& (A_i - A_{j+1})^2 \geq 0
+\end{aligned}
+$$
+移向即得：
+$$
+C(i, j) + C(i + 1, j + 1) \leq C(i + 1, j) + C(i, j + 1)
+$$
+
+因為轉移單調，我們可以透過分治優化在 $O(NK \log N)$ 或 $\text{SMAWK}$ 在 $O(NK)$ 內解決
+
 ## **B. 伴手禮** ***<font color = '#AAAAAA'> Souvenir </font>***
 
 ### ***subtask1***
