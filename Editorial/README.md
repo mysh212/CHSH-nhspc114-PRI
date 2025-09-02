@@ -54,6 +54,8 @@ $$
 
 因為轉移單調，我們可以透過分治優化在 $O(NK \log N)$ 或 $\text{SMAWK}$ 在 $O(NK)$ 內解決
 
+<div class = 'page' />
+
 ## **B. 伴手禮** ***<font color = '#AAAAAA'> Souvenir </font>***
 
 ### ***subtask1***
@@ -98,6 +100,8 @@ $$
 
 **時間複雜度** $O(n \cdot \log_2^n)$
 
+<div class = 'page' />
+
 ## **C. 希格瑪** ***<font color = '#AAAAAA'> Sigma </font>***
 
 ### ***subtask1***
@@ -116,10 +120,14 @@ $$
 把 subtask2 的解法用 sigma 表示，之後用 sigma 平方公式化減，即可得出 $O(1)$ 的公式解。\
 須注意由於用到除法，所以模除要使用模逆元，不能直接模除上去。
 
+<div class = 'page' />
+
 ## **D. 切糕** ***<font color = '#AAAAAA'> Qiegao </font>***
 
 經典的 Sliding Window Median。\
 [偷來的題解](https://hackmd.io/@learning/SJ8gUukdF)
+
+<div class = 'page' />
 
 ## **E. 質數背包** ***<font color = '#AAAAAA'> Prime Knapsack </font>***
 
@@ -145,6 +153,8 @@ $$
 質數判斷怎麼 $O(\log{N})$ ？\
 肯定是米勒拉賓直接砸下去。\
 ~~這 1 分真難拿~~
+
+<div class = 'page' />
 
 ## **F. 最佳訊號路徑** ***<font color = '#AAAAAA'> Optimal Signal Path </font>***
 
@@ -172,6 +182,8 @@ $$
 寫不出來的也別氣餒，多練習就寫得出來了。ouobbb
 
 > 這題有另解，詳見 ***Testers' Code***
+
+<div class = 'page' />
 
 ## **G. 神秘交叉** ***<font color = '#AAAAAA'> Intersect </font>***
 
@@ -255,9 +267,13 @@ $\big(a \oplus b = c \big) \Rightarrow \big( c \oplus b = a \big) \wedge \big( c
 
 **時間複雜度** $O(n \times log_2^{max(< a >)})$
 
+<div class = 'page' />
+
 ## **H. ARC 人類表現估計** ***<font color = '#AAAAAA'> H-ARC </font>***
 
 閱讀題，~~讀完就會寫了~~。
+
+<div class = 'page' />
 
 ## **I. 家俱製造商** ***<font color = '#AAAAAA'> Furniture </font>***
 
@@ -290,6 +306,8 @@ $m < n$
 
 **排序時間複雜度**: $O(n \cdot log_2^n)$\
 **更新時間複雜度**: $O(n)$
+
+<div class = 'page' />
 
 ## **J. 香蕉衝突** ***<font color = '#AAAAAA'> Banana Wars </font>***
 
